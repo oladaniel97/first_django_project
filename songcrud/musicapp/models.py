@@ -28,5 +28,4 @@ class Lyric(models.Model):
 
     def __str__(self):
         return truncatechars(self.content, 50)
-    #def __str__(self) :
-        #return self.content
+    
