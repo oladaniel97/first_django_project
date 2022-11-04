@@ -24,7 +24,7 @@ class Song(models.Model):
 
 class Lyric(models.Model):
     song_id = models.OneToOneField(Song, on_delete=models.CASCADE)
-    content = models.CharField(max_length = 4000)
+    content = models.TextField()
 
     def __str__(self):
         return truncatechars(self.content, 50)
